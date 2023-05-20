@@ -22,3 +22,7 @@ const showImage = () =>{
     const image_container = document.getElementsByClassName('container-img');
     if(image_container.style.display == "none") image_container.style.display = "block";
 }
+
+function goToEjercicio1(){
+    window.location.href = 'ejercicio1.html';
+}
