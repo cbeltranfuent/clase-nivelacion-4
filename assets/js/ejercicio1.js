@@ -20,11 +20,11 @@
 //     '#FFE4FF', // Lavanda rosada
 //     '#FFEBCD'  // Almendra claro
 // ];
-// const tasks = [
-//     '<p>1. Agrega un evento con el método "addEventListener" <br> que permita que al posicionar el cursor sobre cualquier elemento de la lista de clases <br> "haciaejercicio" cambie el color de fondo de este a un color aleatorio</p>',
-//     '<p>2. El color debe quedar momentaneamente, de manera que quede seleccionado </p>',
-//     '<p>3. Al estar todos los elementos seleccionados se habilitará el botón al siguiente ejercicio "ejercicio2.html"</p>',
-// ];
+const tasks = [
+    '<p>1. Agrega un evento con el método "addEventListener" <br> que permita que al posicionar el cursor sobre cualquier elemento de la lista de clases <br> "haciaejercicio" cambie el color de fondo de este a un color aleatorio</p>',
+    '<p>2. El color debe quedar momentaneamente, de manera que quede seleccionado </p>',
+    '<p>3. Al estar todos los elementos seleccionados se habilitará el botón al siguiente ejercicio "ejercicio2.html"</p>',
+];
 
 let index = 0;
 const content_container = document.getElementById('content_container');
@@ -33,8 +33,8 @@ const changeText = (index) =>{
 }
 content_container.addEventListener('mouseenter', ()=>{
     content_container.addEventListener('click', function(){
-        // index == 0 ? index = 1 : index++
-        // index == 3 ? index = 0:'';
+        index == 0 ? index = 1 : index++
+        index == 3 ? index = 0:'';
         changeText(index);
     });
 });
