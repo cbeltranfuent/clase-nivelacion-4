@@ -1,5 +1,6 @@
 let maxclick = 100;
 const button_start = document.getElementById('button_start');
+const button_next = document.getElementById('button_next');
 
 function CountClicks(){
     if(maxclick > 0) 
@@ -17,12 +18,15 @@ function helpMe(){
         console.log('help!!! home.js');
     }
 }
+button_start.addEventListener('click', () => {
+    const showImage = () =>{
+      const image_container = document.getElementById('container-img');
+      image_container.style.display = "block";
+    }
+    showImage();
+   });
+   
 
-const showImage = () =>{
-    const image_container = document.getElementsByClassName('container-img');
-    if(image_container.style.display == "none") image_container.style.display = "block";
-}
-
-function goToEjercicio1(){
+button_next.addEventListener('click', () => {
     window.location.href = 'ejercicio1.html';
-}
+  });
